@@ -30,34 +30,39 @@ interface Ticket {
 
 const tickets: Ticket[] = [
   {
-    title: "Hug Ticket",
-    emoji: "\uD83E\uDD17",
-    description: "Redeemable for one warm, tight, never-letting-go hug. Valid anytime, anywhere, no expiration!",
+    title: "Treat Ticket",
+    emoji: "🛍️",
+    description:
+      "Redeemable for a €30 treat because you deserve it. Could be eating out or any item you wish for (I know you need a bag)!",
     color: "bg-pink-100",
     borderColor: "border-pink-400",
   },
   {
     title: "Hot Night Ticket",
-    emoji: "\uD83D\uDD25",
-    description: "One cozy night in with blankets, hot chocolate, movies, and cuddles. Temperature: extra warm!",
+    emoji: "🔥",
+    description:
+      "One naughty night with me. I promise you it is gonna be hot 🥵",
     color: "bg-red-100",
     borderColor: "border-red-400",
   },
   {
-    title: "Kiss Ticket",
-    emoji: "\uD83D\uDC8B",
-    description: "Redeemable for unlimited kisses for an entire day. Side effects may include butterflies!",
+    title: "Date Ticket",
+    emoji: "👩‍❤️‍💋‍👨",
+    description:
+      "Redeemable for my undivided time, because my time is precious. No distractions, just us!",
     color: "bg-rose-100",
     borderColor: "border-rose-400",
   },
   {
     title: "Forgiveness Ticket",
-    emoji: "\uD83D\uDE07",
-    description: "Get out of one silly argument free! No questions asked. Use wisely (or not)!",
+    emoji: "😇",
+    description:
+      "Get out of one silly argument free! No questions asked. Use wisely (or not)!",
     color: "bg-purple-100",
     borderColor: "border-purple-400",
   },
 ]
+
 
 export function TicketsGift({ onBack }: { onBack: () => void }) {
   const [flipped, setFlipped] = useState<Set<number>>(new Set())
